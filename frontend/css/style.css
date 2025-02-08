@@ -1,18 +1,83 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #323232;
-    color: #fff;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #121212;  /* Dark background */
+    color: #e0e0e0;  /* Light text color */
     text-align: center;
 }
 
-h1 {
-    font-size: 2em;
-    margin: 0 0 20px;
+/* Navigation Styling */
+nav {
+    background-color: #1f1f1f;  /* Darker nav */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-#greeting {
-    font-size: 1.5em;
-    margin: 0 0 20px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0;  /* Light text */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;  /* Highlight on hover */
+}
+
+/* Main Content Styling */
+main {
+    padding-top: 80px; /* Avoid content getting hidden under navbar */
+}
+
+h1 {
+    color: #ffffff;  /* White for contrast */
+}
+
+p {
+    color: #b0b0b0;  /* Slightly lighter than body text */
+}
+
+/* Button Styling */
+button {
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    padding: 8px;
+    width: 70%;
+    margin-top: 10px;
+}
+
